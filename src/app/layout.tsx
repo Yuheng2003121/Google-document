@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@/css/editor.scss"
 import {Inter} from "next/font/google";
-import Provider from "./documents/[id]/provider";
+import Provider from "./provider";
 import { Toaster } from "@/components/ui/sonner";
 import "@liveblocks/react-ui/styles.css";
 import "@liveblocks/react-tiptap/styles.css";
