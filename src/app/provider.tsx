@@ -4,7 +4,9 @@ import React from "react";
 
 export default function Provider({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+    <ClerkProvider
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <ConvexClientProvider>{children}</ConvexClientProvider>
     </ClerkProvider>
   );
